@@ -1,73 +1,79 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+🖼️ Artworks Explorer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A React + TypeScript application built with Vite and PrimeReact, featuring server-side pagination, row selection, and local storage persistence.
+This app fetches real-time data from the Art Institute of Chicago API and displays it in an interactive table.
 
-## React Compiler
+🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React + TypeScript + Vite
 
-## Expanding the ESLint configuration
+PrimeReact (DataTable, OverlayPanel, etc.)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Context API for global state management
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Fetch API for data fetching
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Local Storage for data persistence
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+⚙️ Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🔹 Fetch artworks dynamically from API
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🔹 Paginated table view with adjustable rows per page
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🔹 Select and store artworks using Context API
+
+🔹 Save selections in Local Storage
+
+🔹 Clean and responsive UI with PrimeReact components
+
+🧩 Folder Structure
+
+src/
+ ├── components/
+ │   └── Table.tsx          # Displays artworks in paginated DataTable
+ ├── Context.tsx            # Holds global state and API logic
+ ├── App.tsx                # Main app component
+ ├── main.tsx               # React root rendering
+ └── index.css              # Global styles
+
+🧠 How It Works
+
+On load, the app fetches artworks from:
+https://api.artic.edu/api/v1/artworks?page=1
+
+Pagination is handled through PrimeReact’s DataTable.
+
+Selecting rows saves the artworks in local storage for later access.
+
+You can adjust how many artworks to select using the overlay input field.
+
+🛠️ Getting Started
+
+1.Clone the repo
+
+git clone https://github.com/NiloyRicky/PrimeReact.git
+cd PrimeReact
+
+2.Install dependencies
+npm install
+
+3.Run in development mode
+npm run dev
+
+4.Build for Production
+npm run build
+
+🧑‍💻 Author
+
+Niloy Mondal
+MERN Develope | React | TypeScript | MERN Stack
+
+Depoyed URL:https://prime-react-niloy.netlify.app/<img width="1920" height="1080" alt="Screenshot 2025-10-31 165349" src="https://github.com/user-attachments/assets/3b8732ab-86fb-447d-a16e-40822ebdd0ee" />
+<img width="1920" height="1080" alt="Screenshot 2025-10-31 165408" src="https://github.com/user-attachments/assets/5950acf4-5d6a-4d6c-9c08-b504c10f5094" />
+<img width="1920" height="1080" alt="Screenshot 2025-10-31 165423" src="https://github.com/user-attachments/assets/ca0eea6b-65e7-4fbe-9659-3f7e5cee32aa" />
+
+

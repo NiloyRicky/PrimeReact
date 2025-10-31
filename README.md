@@ -72,8 +72,13 @@ npm run build
 Niloy Mondal
 MERN Develope | React | TypeScript | MERN Stack
 
-Depoyed URL:https://prime-react-niloy.netlify.app/<img width="1920" height="1080" alt="Screenshot 2025-10-31 165349" src="https://github.com/user-attachments/assets/3b8732ab-86fb-447d-a16e-40822ebdd0ee" />
-<img width="1920" height="1080" alt="Screenshot 2025-10-31 165408" src="https://github.com/user-attachments/assets/5950acf4-5d6a-4d6c-9c08-b504c10f5094" />
-<img width="1920" height="1080" alt="Screenshot 2025-10-31 165423" src="https://github.com/user-attachments/assets/ca0eea6b-65e7-4fbe-9659-3f7e5cee32aa" />
+Deployed URL:https://niloy-prime-react.netlify.app/
+
+<img width="1920" height="1080" alt="Screenshot 2025-10-31 171033" src="https://github.com/user-attachments/assets/0f709e35-c420-452f-a082-6de98d968d74" />
+<img width="1920" height="1080" alt="Screenshot 2025-10-31 171018" src="https://github.com/user-attachments/assets/a636a8b7-9db5-4c01-b72d-fc4cd8848cde" />
+<img width="1920" height="1080" alt="Screenshot 2025-10-31 171008" src="https://github.com/user-attachments/assets/3496154b-88d4-41ee-bee3-f01a2b90aa38" />
+<img width="1920" height="1080" alt="Screenshot 2025-10-31 170955" src="https://github.com/user-attachments/assets/dd870f47-84e7-4b21-ab64-28314d89d7b5" />
+<img width="1920" height="1080" alt="Screenshot 2025-10-31 170922" src="https://github.com/user-attachments/assets/807b4d51-0537-451b-8048-2a1acb0b2967" />
+
 
 
